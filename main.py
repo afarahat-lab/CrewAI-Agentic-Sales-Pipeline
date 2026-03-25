@@ -231,7 +231,7 @@ class SalesPipeline(Flow):
 flow = SalesPipeline()
 flow.plot()
 
-emails = await flow.kickoff()
+emails = flow.kickoff()
 
 
 #######################

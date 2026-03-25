@@ -83,7 +83,8 @@ install_dependencies() {
     llama-index \
     llama-index-llms-ollama \
     llama-index-embeddings-ollama \
-    rich
+    rich \
+    pandas
 }
 
 main() {
