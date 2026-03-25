@@ -75,17 +75,20 @@ from crewai_tools import SerperDevTool, ScrapeWebsiteTool
 # Creating Agents
 lead_data_agent = Agent(
   config=lead_agents_config['lead_data_agent'],
-  tools=[SerperDevTool(), ScrapeWebsiteTool()]
+  tools=[SerperDevTool(), ScrapeWebsiteTool()],
+  llm=selected_llm
 )
 
 cultural_fit_agent = Agent(
   config=lead_agents_config['cultural_fit_agent'],
-  tools=[SerperDevTool(), ScrapeWebsiteTool()]
+  tools=[SerperDevTool(), ScrapeWebsiteTool()],
+  llm=selected_llm
 )
 
 scoring_validation_agent = Agent(
   config=lead_agents_config['scoring_validation_agent'],
-  tools=[SerperDevTool(), ScrapeWebsiteTool()]
+  tools=[SerperDevTool(), ScrapeWebsiteTool()],
+  llm=selected_llm
 )
 
 # Creating Tasks
